@@ -1,0 +1,3 @@
+﻿  Server.cpp
+c:\users\ian\documents\github\named-pipe-ipc\server\server\server.cpp(97): warning C4018: '<': signed/unsigned mismatch
+  Server.vcxproj -> C:\Users\Ian\Documents\GitHub\Named-Pipe-IPC\Server\Debug\Server.exe
