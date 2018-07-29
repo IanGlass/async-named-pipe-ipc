@@ -12,4 +12,6 @@ The server supports the following commands:
 * size - returns the current size of the 'table'
 * get [property] [index] - returns the property of the student specified by index
 * edit [property] [index] [value] - writes value to the property of the student specified by index
-* exit - closes client process, server process continues in background. The server will allow a new client connection at this point
+* exit - closes client process, server process continues in background. This means that the student data is persistent with the server process. The server will allow a new client connection when the old one is closed.
+
+Have Fun!

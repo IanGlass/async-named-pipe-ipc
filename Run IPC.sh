@@ -1,7 +1,6 @@
 #!/bin/bash
 echo starting server
-#open server as daemon thread
-./Server/Debug/Server.exe -d
+#detach server process from main
+./Server/Debug/Server.exe &
 echo starting client
 ./Client/Debug/Client.exe
-echo ready
