@@ -1,12 +1,15 @@
 # Async-Named-Pipe-IPC
 
-Simple implementation of a named pipe to perform IPC between two processes
+Simple implementation of an asynchronous named pipe to perform IPC between two processes.
 
-The client commands are:
-ADD, SUB, MUL and DIV expecting the format [CMD] [arg1] [arg2]
+The server contains a table for storing student data, where student objects can be added, edited or deleted through the client process.
+Currently supported student properties are: name and age
 
-SAV [type] [arg1] - saving either a string or an int, where [type] is str or int
+The server supports the following commands:
 
-GET [type] - returns the stored value
+* add - adds an student object to the end of the 'table'
+* delete [index] -  deletes the object specified by index
+* size - returns the current size of the 'table'
+* get [property] [index] - returns the property of the student specified by index
+* edit [property] [index] [value] - writes value to the property of the student specified by index
 
-EXT - closing the client program
