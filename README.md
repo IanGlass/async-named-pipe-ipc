@@ -14,4 +14,6 @@ The server supports the following commands:
 * edit [property] [index] [value] - writes value to the property of the student specified by index
 * exit - closes client process, server process continues in background. This means that the student data is persistent with the server process. The server will allow a new client connection when the old one is closed.
 
+The entry point for this application is Run IPC.sh
+
 Have Fun!
