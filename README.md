@@ -32,7 +32,8 @@ The server supports 5 commands with expected [arguments]:
 
 The server begins by instantiating a vector of class type *Student* of length 1. The *Empty* Student object is used to add an empty student object to the end of the vector when the 'add' command is invoked. The constructor method of class CPipe automatically creates a pipe on instantiation and a destructor closes the pipe. 
 Once the pipe is created, the server waits for a client process connection and then enters an infinite loop waiting to receive client data.
-The *GetLastError* method allows the server to drop the current pipe connection of the client disconnects and opens a new one when a new client is available.
+The *GetLastError* method allows the server to drop the current pipe connection if the client disconnects and opens a new one when a new client is available.
+Using a vector container to store the student table allows the server to easily and dynamically alter the size of the student table.
 
 ```cpp
 int main() {
